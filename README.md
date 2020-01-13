@@ -3,9 +3,10 @@
 ## Findpets server
 
 
-Server-side repo for the Findpets adoption app. Findpets is a first come first serve pet adoption app. Users create an account, and will be placed in a line. Adoption listings are populated one at a time, when users are at the front of the line, they will only able to select either the next cat or dog. 
+Find Pets is a first come first serve pet adoption app. Users can enter their name and be placed in an adoptions queue. When users are at the top of the queue, they can either choose to adopt a cat or a dog. This app was built with the intention of making sure the animals that have been at the shelter the longest get a home first. Therefore, users can't browse through the animals in the shelter. Users also can't adopt when it's not their turn.
+ 
+The server was built using express, node, and Queue data structure. The queue is generated with test-users and when users enter their name. The test users are re-enqueued to prevent "empty lines". Animals are also re-enqueued after adoption to prevent an "empty shelter".
 
-The server was built using express, node, and Queue data structure. The queue is generated with test-users and when users enter their name. The tests users are re-enqueued to prevent "empty lines". Animals are also re-enqueued after adoption to prevent an "empty shelter". 
 
 ## Details
 
